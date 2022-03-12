@@ -1,7 +1,7 @@
 import rsa
 import os
 
-os.system('clear')
+os.system('cls,clear')
 print ("""
    ▄████████  ▄█          ▄███████▄    ▄█    █▄       ▄████████ 
   ███    ███ ███         ███    ███   ███    ███     ███    ███ 
@@ -17,16 +17,19 @@ print ("""
 
 print()
 print("Loading...")
-publicKey, privateKey = rsa.newkeys(4096)        
+publicKey, privateKey = rsa.newkeys(4096)       
 
 def main():
-    choice = int(input("1. Encryption\n2. Decryption\nChoose(1,2): "))
+    choice = int(input("1. Encryption\n2. Decryption\n3. Creators\nChoose (1,2,3): "))
     if choice == 1:
-        print("---Encryption---")
+        print("--+Encryption+--")
         cipher_encryption()
     elif choice == 2:
-        print("---Decryption---")
+        print("--+Decryption+--")
         cipher_decryption()
+    elif choice == 3:
+        print("--+Creators+--")
+        credits()
     else:
         print("Invalid Choice")
 
@@ -68,5 +71,8 @@ def cipher_decryption():
 
     print("Decrypted Text: {}".format(decryp_text))
     
+def credits():
+    message = print("OWNER: XML, CREDITS: BLACKHATPARROT")
+
 if __name__ == "__main__":
     main()
