@@ -36,7 +36,7 @@ array = range(100)
 for i in array:
     ani(i,array)
     sleep(0.1)
-    os.system("cls")
+    os.system("clear")
 
 
 def main():
