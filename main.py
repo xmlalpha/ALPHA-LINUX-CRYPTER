@@ -1,7 +1,7 @@
 import rsa
 import os
 
-os.system('cls,clear')
+os.system('clear')
 print ("""
  █████╗ ██╗     ██████╗ ██╗  ██╗ █████╗ 
 ██╔══██╗██║     ██╔══██╗██║  ██║██╔══██╗
