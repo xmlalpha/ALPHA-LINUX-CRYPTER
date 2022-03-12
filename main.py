@@ -14,9 +14,26 @@ print ("""
 ===========+coded by ALPHA+=============
 """)
 
-print()
-print("Loading...")
-publicKey, privateKey = rsa.newkeys(4096)       
+import time
+import sys
+
+done = 'false'
+#here is the animation
+def animate():
+    while done == 'false':
+        sys.stdout.write('\rloading |')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading /')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading -')
+        time.sleep(0.1)
+        sys.stdout.write('\rloading \\')
+        time.sleep(0.1)
+    sys.stdout.write('\rDone!     ')
+
+animate()
+#long process here
+done = 'false'      
 
 def main():
     choice = int(input("1. Encryption\n2. Decryption\n3. Creators\n4. GitHub\nChoose (1,2,3,4): "))
@@ -36,9 +53,7 @@ def main():
         print("Invalid Choice")
 
 def cipher_encryption():
- if 1 == os.system("clear"):
-    
-    message = input("Enter message: ")
+    message = input("Enter Message:")
     key = 47
     encryp_text = ""
 
@@ -57,7 +72,6 @@ def cipher_encryption():
     print("Encrypted Text: {}".format(encryp_text))
 
 def cipher_decryption():
-    os.system('clear') 
     message = input("Enter message: ")
     key = 47
     decryp_text = ""
@@ -81,7 +95,7 @@ def credits():
     message = print("OWNER: XML, CREDITS: BLACKHATPARROT")
 
 def github():
-    print("https://github.com/xmlalpha")
+        print("https://github.com/xmlalpha")  
 
 if __name__ == "__main__":
     main()
