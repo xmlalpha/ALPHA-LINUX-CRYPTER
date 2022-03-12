@@ -1,8 +1,5 @@
 #!usr/bin/python3
 
-from cgitb import text
-from email import message
-from tkinter.colorchooser import Chooser
 import rsa
 import os
 
