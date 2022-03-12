@@ -5,3 +5,5 @@ Example: python3 main.py
 
 wait to load and choose what you want to encrypt.
 
+IF YOU WANNA CHANGE SOMETHING ON THE TOOL IT'S OK THE TOOL IS OPEN-SOURCE AND YOU HAVE PERMISSION TO CHANGE SETTINGS 
+
