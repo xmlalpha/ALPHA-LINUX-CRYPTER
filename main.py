@@ -1,18 +1,20 @@
+#!usr/bin/python3
+
+from cgitb import text
+from email import message
+from tkinter.colorchooser import Chooser
 import rsa
 import os
 
-os.system('cls,clear')
+os.system('clear')
 print ("""
-   ▄████████  ▄█          ▄███████▄    ▄█    █▄       ▄████████ 
-  ███    ███ ███         ███    ███   ███    ███     ███    ███ 
-  ███    ███ ███         ███    ███   ███    ███     ███    ███ 
-  ███    ███ ███         ███    ███  ▄███▄▄▄▄███▄▄   ███    ███ 
-▀███████████ ███       ▀█████████▀  ▀▀███▀▀▀▀███▀  ▀███████████ 
-  ███    ███ ███         ███          ███    ███     ███    ███ 
-  ███    ███ ███▌    ▄   ███          ███    ███     ███    ███ 
-  ███    █▀  █████▄▄██  ▄████▀        ███    █▀      ███    █▀  
-             ▀                                                                      
-=====================+coded by ALPHA+==========================
+ █████╗ ██╗     ██████╗ ██╗  ██╗ █████╗ 
+██╔══██╗██║     ██╔══██╗██║  ██║██╔══██╗
+███████║██║     ██████╔╝███████║███████║
+██╔══██║██║     ██╔═══╝ ██╔══██║██╔══██║
+██║  ██║███████╗██║     ██║  ██║██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝                     
+===========+coded by ALPHA+=============
 """)
 
 print()
@@ -20,7 +22,7 @@ print("Loading...")
 publicKey, privateKey = rsa.newkeys(4096)       
 
 def main():
-    choice = int(input("1. Encryption\n2. Decryption\n3. Creators\nChoose (1,2,3): "))
+    choice = int(input("1. Encryption\n2. Decryption\n3. Creators\n4. GitHub\nChoose (1,2,3,4): "))
     if choice == 1:
         print("--+Encryption+--")
         cipher_encryption()
@@ -30,10 +32,15 @@ def main():
     elif choice == 3:
         print("--+Creators+--")
         credits()
+    elif choice == 4:
+        print("--+GitHub+--")
+        github()
     else:
         print("Invalid Choice")
 
 def cipher_encryption():
+ if 1 == os.system("clear"):
+    
     message = input("Enter message: ")
     key = 47
     encryp_text = ""
@@ -53,6 +60,7 @@ def cipher_encryption():
     print("Encrypted Text: {}".format(encryp_text))
 
 def cipher_decryption():
+    os.system('clear') 
     message = input("Enter message: ")
     key = 47
     decryp_text = ""
@@ -72,7 +80,11 @@ def cipher_decryption():
     print("Decrypted Text: {}".format(decryp_text))
     
 def credits():
+    os.system('clear') 
     message = print("OWNER: XML, CREDITS: BLACKHATPARROT")
+
+def github():
+    print("https://github.com/xmlalpha")
 
 if __name__ == "__main__":
     main()
