@@ -5,7 +5,7 @@ from time import sleep
 
 def progress_bar(seconds):
       for progress in range(0,seconds+1):
-        os.system('cls')  
+        os.system('clear')  
         percent = (progress * 100) // seconds
         print("\n")
         print("Loading...")
