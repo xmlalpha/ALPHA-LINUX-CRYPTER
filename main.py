@@ -1,3 +1,4 @@
+from secrets import choice
 import sys
 import rsa
 import os
