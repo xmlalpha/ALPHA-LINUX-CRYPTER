@@ -1,5 +1,6 @@
 #!usr/bin/python3
 
+from secrets import choice
 import rsa
 import os
 from time import sleep
@@ -36,7 +37,7 @@ array = range(100)
 for i in array:
     ani(i,array)
     sleep(0.1)
-    os.system("clear")
+    os.system("cls")
 
 
 def main():
@@ -51,21 +52,58 @@ def main():
 
     choice = int(input("1. Encryption\n2. Decryption\n3. Creators\n4. GitHub\nChoose (1,2,3,4): "))
     if choice == 1:
-        print("--+Encryption+--")
+        os.system('clear')
+        print("""
+███████╗███╗   ██╗ ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+██╔════╝████╗  ██║██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+█████╗  ██╔██╗ ██║██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║   ██║██╔██╗ ██║
+██╔══╝  ██║╚██╗██║██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║   ██║██║╚██╗██║
+███████╗██║ ╚████║╚██████╗██║  ██║   ██║   ██║        ██║   ██║╚██████╔╝██║ ╚████║
+╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝""")
+        sleep(5)
         cipher_encryption()
     elif choice == 2:
-        print("--+Decryption+--")
+        os.system('clear')
+        print("""
+██████╗ ███████╗ ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔════╝██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+██║  ██║█████╗  ██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║   ██║██╔██╗ ██║
+██║  ██║██╔══╝  ██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║   ██║██║╚██╗██║
+██████╔╝███████╗╚██████╗██║  ██║   ██║   ██║        ██║   ██║╚██████╔╝██║ ╚████║
+╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝""")
+        sleep(5)
         cipher_decryption()
     elif choice == 3:
-        print("--+Creators+--")
+        if choice == 3:
+            os.system('clear')
+            print("""
+ ██████╗██████╗ ███████╗ █████╗ ████████╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝
+██║     ██████╔╝█████╗  ███████║   ██║   ██║   ██║██████╔╝███████╗
+██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗╚════██║
+╚██████╗██║  ██║███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║███████║
+ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝""")
+        sleep(5)
         credits()
     elif choice == 4:
-        print("--+GitHub+--")
+        if choice == 4:
+            os.system('clear')
+            print("""
+ ██████╗ ██╗████████╗██╗  ██╗██╗   ██╗██████╗ 
+██╔════╝ ██║╚══██╔══╝██║  ██║██║   ██║██╔══██╗
+██║  ███╗██║   ██║   ███████║██║   ██║██████╔╝
+██║   ██║██║   ██║   ██╔══██║██║   ██║██╔══██╗
+╚██████╔╝██║   ██║   ██║  ██║╚██████╔╝██████╔╝
+ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═════╝""")
+        sleep(5)
         github()
     else:
         print("Invalid Choice")
 
+
 def cipher_encryption():
+    if choice == 1:
+        os.system('clear')
     message = input("Enter Message:")
     key = 47
     encryp_text = ""
@@ -85,6 +123,8 @@ def cipher_encryption():
     print("Encrypted Text: {}".format(encryp_text))
 
 def cipher_decryption():
+    if choice == 2:
+        os.system('clear')
     message = input("Enter message: ")
     key = 47
     decryp_text = ""
@@ -103,8 +143,9 @@ def cipher_decryption():
 
     print("Decrypted Text: {}".format(decryp_text))
     
-def credits(): 
-    message = print("OWNER: XML, CREDITS: BLACKHATPARROT")
+def credits():
+        print("OWNER: XML")
+        print("CREDITS: BLACKHATPARROT")
 
 def github():
         print("https://github.com/xmlalpha")  
