@@ -29,6 +29,7 @@ def ani(i,array):
     g=fixed_space(per,array)
     #To fix at the same position
     f=fixed_space(i,array)
+    os.system('clear')
     print('Loading : ',y,g+str(per)+'%',' ('+f+str(i+1)+' / '+str(len(array))+' ) ',end='\r')
     #That same '\r' to clear previous text
     j=c
