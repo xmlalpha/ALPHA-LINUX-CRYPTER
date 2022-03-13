@@ -14,7 +14,7 @@ def progress_bar(seconds):
         sleep(1)  
    
 progress_bar(10)  
-os.system('cls')
+os.system('clear')
 sleep(3)
 
 def main():
