@@ -84,7 +84,7 @@ def main():
 ╚██████╗██║  ██║███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║███████║
  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝""")
         sleep(5)
-        credits()
+        creators()
     elif choice == 4:
         if choice == 4:
             os.system('clear')
@@ -147,7 +147,7 @@ def credits():
         print("OWNER: XML")
         print("CREDITS: BLACKHATPARROT")
 
-def github():
+def creators():
         print("https://github.com/xmlalpha")  
 
 if __name__ == "__main__":
