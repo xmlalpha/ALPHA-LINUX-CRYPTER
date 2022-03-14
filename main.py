@@ -63,18 +63,6 @@ def main():
  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝""")
         sleep(5)
         creators()
-    elif choice == 4:
-        if choice == 4:
-            os.system('clear')
-            print("""
- ██████╗ ██╗████████╗██╗  ██╗██╗   ██╗██████╗ 
-██╔════╝ ██║╚══██╔══╝██║  ██║██║   ██║██╔══██╗
-██║  ███╗██║   ██║   ███████║██║   ██║██████╔╝
-██║   ██║██║   ██║   ██╔══██║██║   ██║██╔══██╗
-╚██████╔╝██║   ██║   ██║  ██║╚██████╔╝██████╔╝
- ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═════╝""")
-        sleep(5)
-        github()
     else:
         print("Invalid Choice")
 
@@ -123,7 +111,7 @@ def cipher_decryption():
     
 def creators():
         print("OWNER: XML")
-        print("CREDITS: BLACKHATPARROT")
+        print("CREDITS: RadoslavAtanasov")
 
 def github():
         print("https://github.com/xmlalpha")  
