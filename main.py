@@ -113,8 +113,5 @@ def creators():
         print("OWNER: XML")
         print("CREDITS: RadoslavAtanasov")
 
-def github():
-        print("https://github.com/xmlalpha")  
-
 if __name__ == "__main__":
     main()
