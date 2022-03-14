@@ -28,7 +28,7 @@ def main():
 ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝                     
 ===========+coded by ALPHA+=============""")
 
-    choice = int(input("1. Encryption\n2. Decryption\n3. Creators\n4. GitHub\nChoose (1,2,3,4): "))
+    choice = int(input("1. Encryption\n2. Decryption\n3. Creators\n4. \nChoose (1,2,3): "))
     if choice == 1:
         os.system('clear')
         print("""
