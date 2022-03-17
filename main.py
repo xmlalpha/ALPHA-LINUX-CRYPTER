@@ -3,8 +3,6 @@ import sys
 import rsa
 import os
 from time import sleep
-
-from time import sleep
 import tqdm
 
 for i in tqdm.tqdm(range(100)):
