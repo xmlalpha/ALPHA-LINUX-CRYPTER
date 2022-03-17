@@ -4,22 +4,15 @@ import rsa
 import os
 from time import sleep
 
-def progress_bar(seconds):
-      for progress in range(0,seconds+1):
-        os.system('clear')  
-        percent = (progress * 100) // seconds
-        print("\n")
-        print("Loading...")
-        print("<" + ("=" * progress) + (" " * (seconds-progress)) + "> " + str(percent) + "%")
-        print("\n")
-        sleep(1)  
-   
-progress_bar(10)  
-os.system('clear')
-sleep(3)
+from time import sleep
+import tqdm
+
+for i in tqdm.tqdm(range(100)):
+    sleep(0.1)
+    
 
 def main():
-    print("""
+print("""
  █████╗ ██╗     ██████╗ ██╗  ██╗ █████╗ 
 ██╔══██╗██║     ██╔══██╗██║  ██║██╔══██╗
 ███████║██║     ██████╔╝███████║███████║
